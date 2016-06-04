@@ -13,10 +13,10 @@ import {
   Image
 } from 'react-native';
 
-import NavBar from './navBar.js'
-import User from './user.js'
-import ButtonGroup from './buttonGroup'
-import Tabs from './tabs'
+import NavBar from './components/navBar.js'
+import User from './components/user.js'
+import ButtonGroup from './components/buttonGroup'
+import Tabs from './components/tabs'
 
 class gitbookTest extends Component {
   render() {
