@@ -16,48 +16,42 @@ class gitbookTest extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
+        <View style={styles.left}>
+        </View>
+        <View style={styles.right}>
+          <View style={styles.rightTop}>
+          </View>
+          <View style={styles.rightBottom}>
+          </View>
+        </View>
       </View>
     );
   }
 }
 
-class test2 extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>test2 Component</Text>
-      </View>
-    )
-  }
-}
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    flexDirection: 'row',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+  left: {
+    flex: 1,
+    backgroundColor: 'red'
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+  right: {
+    flex: 2,
+    flexDirection: 'column',
   },
+  rightTop: {
+    flex: 1,
+    backgroundColor: 'blue'
+  },
+  rightBottom: {
+    flex: 2,
+    backgroundColor: 'yellow'
+  }
+
 });
 
-AppRegistry.registerComponent('gitbookTest', () => test2);
+AppRegistry.registerComponent('gitbookTest', () => gitbookTest);
