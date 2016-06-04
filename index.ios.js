@@ -9,21 +9,27 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  Image
 } from 'react-native';
+
+import NavBar from './navBar.js'
+import User from './user.js'
+import ButtonGroup from './buttonGroup'
+import Tabs from './tabs'
 
 class gitbookTest extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.left}>
+        <NavBar />
+        <User />
+        <View style={{height: 40}}>
         </View>
-        <View style={styles.right}>
-          <View style={styles.rightTop}>
-          </View>
-          <View style={styles.rightBottom}>
-          </View>
+        <ButtonGroup />
+        <View style={{flex: 1}}>
         </View>
+        <Tabs />
       </View>
     );
   }
@@ -33,25 +39,8 @@ class gitbookTest extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'row',
-  },
-  left: {
-    flex: 1,
-    backgroundColor: 'red'
-  },
-  right: {
-    flex: 2,
     flexDirection: 'column',
   },
-  rightTop: {
-    flex: 1,
-    backgroundColor: 'blue'
-  },
-  rightBottom: {
-    flex: 2,
-    backgroundColor: 'yellow'
-  }
-
 });
 
 AppRegistry.registerComponent('gitbookTest', () => gitbookTest);
