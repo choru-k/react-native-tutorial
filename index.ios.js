@@ -24,10 +24,10 @@ class gitbookTest extends Component {
       <View style={styles.container}>
         <NavBar />
         <User />
-        <View style={{height: 40}}>
+        <View style={{height: 40, backgroundColor: '#F0F0F0'}}>
         </View>
         <ButtonGroup />
-        <View style={{flex: 1}}>
+        <View style={{flex: 1, backgroundColor: '#F0F0F0'}}>
         </View>
         <Tabs />
       </View>

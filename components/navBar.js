@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FF6E40',
     justifyContent: 'center',
     alignItems: 'center',
+    paddingTop: 10
   },
   navBarText: {
     fontSize: 20,
